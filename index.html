@@ -35,10 +35,10 @@
     </table>
     <p>This is a simple paragraph for the DOM tutorial.</p>
 
-    <ul>
-        <li>mithu</li>
-        <li>john</li>
-        <li>jane</li>
+    <ul >
+        <li>mithu</li> 
+        <li id="bah">john</li>
+        <li id="hey">jane</li>
     </ul>
     
     <script>
@@ -77,6 +77,14 @@
              for( const tr of trcollection){
                 console.log(tr.innerText); // .innerText use kore tr tag er text gula show korbe, na hole show korbe na 
             }
+
+            //get element by id
+           const  bandElement = document.getElementById('bah');
+            bandElement.innerText = ' omi';
+
+            const bandElements = document.getElementById('hey'); // id use kore ja kono name chanje kora jabe and sob gula change kora jay
+            bandElements.innerText = 'happy';
+
 
 
 
