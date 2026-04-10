@@ -11,6 +11,9 @@
             red;
 
         }
+        .fd{
+            color: green;
+        }
     </style>
 
 </head>
@@ -40,6 +43,32 @@
         <li id="bah">john</li>
         <li id="hey">jane</li>
     </ul>
+ <section>
+      <h1 class="fd">all my friends</h1>
+ </section>
+
+    <ul> 
+        <li class= "mithu"> liza</li>
+        <li class=" mithu"> alpona </li>
+        <li class=" mithu"> jannat</li>
+        <li class=" mithu"> sumaiya</li>
+        <li class=" mithu">  tinni</li>
+    </ul> 
+
+    <ol>
+        <li class="tinni">Item 1</li>
+        <li class="tinni">Item 2</li>
+        <li class="tinni">Item 3</li>
+        <li class="tinni">Item 4</li>
+        <li class="tinni">Item 5</li>
+    </ol>
+    <ol>
+        <li id="12">Item 1</li>
+        <li id="12">Item 2</li>
+        <li id="12">Item 3</li>
+        <li id="12">Item 4</li>
+        <li id="12">Item 5</li>
+    </ol>
     
     <script>
       //console.log('how to select element in the DOM');
@@ -84,6 +113,28 @@
 
             const bandElements = document.getElementById('hey'); // id use kore ja kono name chanje kora jabe and sob gula change kora jay
             bandElements.innerText = 'happy';
+
+
+
+
+            //get element by class name
+            const mithuClass = document.getElementsByClassName('mithu');
+            console.log(mithuClass);
+             for( const mithu of mithuClass){
+                console.log(mithu);
+             }
+
+             const TinniClass = document.getElementsByClassName('tinni');
+             console.log(TinniClass);
+             for( const tinni of TinniClass){
+                console.log(tinni); // 
+             }
+             
+
+             // get element by new id 
+
+            const NameID = document.getElementById('12');
+            NameID.innerText = 'TInni is a good girl';
 
 
 
