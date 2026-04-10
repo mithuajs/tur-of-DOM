@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Tur of DOM</title>
+    <style>
+        h1{
+            color: 
+            red;
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1> hi everyone</h1>
+    <h1> Welcome to the DOM Tutorial</h1>
+    <p>This is a simple paragraph for the DOM tutorial.</p>
+
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Mithu</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+    </table>
+    <p>This is a simple paragraph for the DOM tutorial.</p>
+
+    <ul>
+        <li>mithu</li>
+        <li>john</li>
+        <li>jane</li>
+    </ul>
+    
+    <script>
+      //console.log('how to select element in the DOM');
+      //console.log(" my name is mithu");
+              const Student ={
+                name: 'mithu',
+                age: 22,
+                study: function( subject){
+                    console.log(' diploma in cse');
+                }
+            };
+
+          //all li tag select
+            const liCollection = document.getElementsByTagName('li');
+            console.log(liCollection);
+            for( const li of liCollection){
+                console.log(li.innerText);
+            }
+            // all h1 tag select
+            const h1collection = document.getElementsByTagName('h1');
+            console.log(h1collection);
+             for( const h1 of h1collection){
+                console.log(h1.innerText);
+            }
+
+            // all p tag select
+            const pcollection = document.getElementsByTagName('p');
+            console.log(pcollection);
+             for( const p of pcollection){
+                console.log(p);
+            }
+            // all tr tag select
+            const trcollection = document.getElementsByTagName('tr');
+            console.log(trcollection);
+             for( const tr of trcollection){
+                console.log(tr.innerText); // .innerText use kore tr tag er text gula show korbe, na hole show korbe na 
+            }
+
+
+
+    </script>
+    <script src="./js/hello.js"></script>
+</body>
+</html>
