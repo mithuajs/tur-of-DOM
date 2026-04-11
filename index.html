@@ -17,10 +17,15 @@
     </style>
 
 </head>
-<body>
-    <h1> hi everyone</h1>
-    <h1> Welcome to the DOM Tutorial</h1>
-    <p>This is a simple paragraph for the DOM tutorial.</p>
+<body >
+    <section id="old-sylhet" class="sylhet">
+
+        <h1> hi everyone</h1>
+        <h1> Welcome to the <span>DOM</span> Tutorial</h1>
+        <p>This is a simple paragraph for <span>the DOM tutorial</span>. Lorem, <span>ipsum</span> dolor sit amet consectetur adipisicing elit. Illum, fugiat?</p>
+
+    </section>
+
 
     <table border="2">
         <tr>
@@ -135,6 +140,17 @@
 
             const NameID = document.getElementById('12');
             NameID.innerText = 'TInni is a good girl';
+
+
+
+            // query selector all
+            const queryAll = document.querySelectorAll('#old-sylhet span');
+            console.log(queryAll);
+                for( const query of queryAll){
+                    console.log(query.innerText);
+                }
+
+
 
 
 
