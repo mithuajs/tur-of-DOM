@@ -15,13 +15,25 @@
 
     <br>
 
-    <!-- Option  1 for even handler -->
-     <button onclick=""> MAke yellow</button>
-     <script>
-        function MakeYellow(){
-            document.body.style.backgroundColor = 'yellow' ; 
+    <!-- Option  2 for even handler -->
+     <button onclick="MakeYellow()"> MAke yellow</button>
+     <button onclick="MakeBlue()"> Make blue</button>
+     <br>
 
-        }
+     <!-- options 3 for event handler -->
+
+     <button id="gray-btn">Make gray</button>
+
+
+     <!-- options 4 for event handler -->
+        <button id="pink-btn">Make pink</button>
+     <script>
+        //get element by id.add event listener
+        document.getElementById('pink-btn').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'pink';
+        })
+
+     
      </script>
 
 
